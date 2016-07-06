@@ -1,0 +1,2140 @@
+/*!
+Theme Name: James Anderson 613 v2
+Theme URI: http://jamesanderson613.com/
+Description: Testimonial site.
+Author: Cahoona
+Version: 0.2
+*/
+
+
+
+
+/*
+ * HTML5 ✰ Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ *
+ * ==|== normalize ==========================================================
+ */
+
+/* Webkit blue line on block element fix */
+a:-webkit-any-link{
+text-decoration:none !important;
+}
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+  color: #222;
+}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+::-moz-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}
+/* =============================================================================
+   Links
+   ========================================================================== */
+a {
+  color: #00e;
+}
+a:visited {
+  color: #551a8b;
+}
+a:hover {
+  color: #06e;
+}
+a:focus {
+  outline: thin dotted;
+}
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active {
+  outline: 0;
+}
+/* =============================================================================
+   Typography
+   ========================================================================== */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b, strong {
+  font-weight: bold;
+}
+blockquote {
+  margin: 1em 40px;
+}
+dfn {
+  font-style: italic;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+/* Redeclare monospace font family: h5bp.com/j */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+/* Improve readability of pre-formatted text in all browsers */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+q {
+  quotes: none;
+}
+q:before, q:after {
+  content: "";
+  content: none;
+}
+small {
+  font-size: 85%;
+}
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* =============================================================================
+   Lists
+   ========================================================================== */
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+dd {
+  margin: 0 0 0 40px;
+}
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/e
+ */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+/*
+ * Correct overflow not hidden in IE9
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* =============================================================================
+   Figures
+   ========================================================================== */
+figure {
+  margin: 0;
+}
+/* =============================================================================
+   Forms
+   ========================================================================== */
+form {
+  margin: 0;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/* Indicate that 'label' will shift focus to the associated form element */
+label {
+  cursor: pointer;
+}
+/*
+ * 1. Correct color not inheriting in IE6/7/8/9
+ * 2. Correct alignment displayed oddly in IE6/7
+ */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+}
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ */
+button, input {
+  line-height: normal;
+}
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
+ */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+/*
+ * Consistent box sizing and appearance
+ */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/*
+ * Remove inner padding and border in FF3/4: h5bp.com/l
+ */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/*
+ * 1. Remove default vertical scrollbar in IE6/7/8/9
+ * 2. Allow only vertical resizing
+ */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+/* Colors for form validity */
+input:invalid, textarea:invalid {
+  background-color: #f0dddd;
+}
+/* =============================================================================
+   Tables
+   ========================================================================== */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td {
+  vertical-align: top;
+}
+/*@import 'includes/bootstrap';*/
+/* */
+/* CONSTANTS */
+/* fonts */
+/* color */
+/* columns  */
+/*@column: 6.25%;
+@column_margin_width: 2.083%;*/
+/* END CONSTANTS */
+::-moz-selection {
+  background: #d70a2d;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #d70a2d;
+  color: #fff;
+  text-shadow: none;
+}
+#line1 {
+  height: 200px;
+}
+#bar1 {
+  height: 300px;
+}
+#heat1, #heat2, #heat3 {
+  height: 420px;
+}
+#radial1 {
+  height: 250px;
+}
+.section_header {
+  position: relative;
+  /*    left: -66px;*/
+
+  left: -69px;
+  margin-bottom: 35px;
+}
+.section_header * {
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-property: opacity;
+  -moz-transition-duration: 0.5s;
+}
+.heading.number {
+  /*    display: none;*/
+
+  opacity: 0;
+}
+.heading.number span {
+  display: inline-block;
+  padding: 5px;
+  background: #666666;
+  color: #f1e4d3;
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-right: 3px;
+  font-size: 35px;
+  line-height: 0.75;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.heading.number sub {
+  position: relative;
+  top: -0.8px;
+}
+.heading.tag {
+  display: inline-block;
+  padding: 5px;
+  background: #666666;
+  text-transform: uppercase;
+  color: #f1e4d3;
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  line-height: 0.75;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin-right: 10px;
+  /* rarw */
+
+}
+body.home > footer .heading {
+  color: #FFF;
+}
+body.home > footer .heading.number span {
+  color: #FFF;
+}
+#downArrow {
+  position: absolute;
+  bottom: 20px;
+  left: 674px;
+  width: 268px;
+  height: 82px;
+  z-index: 50;
+  opacity: 0;
+}
+#downArrow a {
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 268px;
+  height: 82px;
+  background: url(static/img/home_arrow2.png) no-repeat;
+  text-indent: -999em;
+  cursor: pointer;
+}
+#main {
+  position: relative;
+}
+#identity {
+  position: relative;
+  top: 40px;
+  /*    float:left;
+    width: 100%;*/
+
+  height: 95px;
+  z-index: 50;
+}
+#identity .left {
+  float: left;
+  margin-right: 11px;
+}
+#identity .right {
+  /* float:right; */
+  float: left;
+}
+#identity #whatis613 {
+  opacity: 0;
+  position: absolute;
+  top: 14px;
+  left: 300px;
+  text-indent: -999em;
+  background: url(static/img/613-hover.png) no-repeat;
+  height: 44px;
+  width: 171px;
+}
+#identity .scorecard {
+  background: url(static/img/scorecard.png) no-repeat;
+  height: 71px;
+  width: 129px;
+}
+#identity .scorecard .one, #identity .scorecard .two, #identity .scorecard .three {
+  position: relative;
+  top: 15px;
+  left: 9px;
+  margin-right: 10px;
+  display: inline-block;
+  text-indent: -999em;
+  height: 43px;
+  width: 29px;
+  overflow: hidden;
+  background-image: url(static/img/numbers.png);
+  background-position: 0 43px;
+  background-repeat: repeat-y;
+}
+#identity h1, #identity h2 {
+  margin: 0;
+  padding: 0;
+  text-indent: -999em;
+}
+#identity h1 {
+  position: relative;
+  background: url(static/img/james-anderson.png) no-repeat;
+  top: 13px;
+  height: 70px;
+  width: 125px;
+}
+#identity h2 {
+  position: relative;
+ /* background: url(static/img/10-years.png) no-repeat;*/
+  height: 35px;
+  width: 140px;
+}
+#feed {
+  /*                    position: relative;
+    top: -30px;
+    float:right;*/
+  padding-top: 17px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 455px;
+  height: 120px;
+  background: url("static/img/portrait-18.png") no-repeat 320px 0px;
+  margin-top: -5px;
+}
+.red h2, .red h3 { color: #d80017 !important; }
+#feed h2, #feed h3 {
+  border: none;
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+#feed h2 {
+  color: #333333;
+  font-size: 22px;
+  /*margin: 4px 0 0 5px;*/
+  text-align: center;
+  width: 100%;
+}
+#feed h3 {
+  color: #000;
+  font-size: 16.5px;
+/*  margin-left: 18px;*/
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+.scorecard {
+  background: url(static/img/scorecard-small.png) no-repeat 0 32px;
+  width: 86px;
+  float: left;
+}
+.red { background: url(static/img/scorecard-small-red.png) no-repeat 0 32px;}
+.smallcard {    
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    margin: 0 -5px;
+    text-align: center;
+  }
+.scorecard .one, .scorecard .two, .scorecard .three {
+  position: relative;
+  top: 8px;
+  left: 3px;
+  margin-right: 5px;
+  display: inline-block;
+  text-indent: -999em;
+  height: 34px;
+  width: 20px;
+  overflow: hidden;
+  background-image: url(static/img/numbers-small.png);
+  background-position: 0 34px;
+  background-repeat: repeat-y;
+}
+#awwwards {
+  position: absolute;
+  left: 0;
+  /*top:80px;*/
+  top: 220px;
+  z-index: 1000;
+  -webkit-transition-property: top;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-property: top;
+  -moz-transition-duration: 0.5s;
+}
+#awwwards a {
+  background: url("static/img/awwwards_nominee_b_left.png") no-repeat scroll 0 0 transparent;
+  display: block;
+  height: 105px;
+  overflow: hidden;
+  text-indent: -8000px;
+  width: 69px;
+}
+html {
+  background-image: url("static/img/bg.png");
+  background-position: center top;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  /* end of body.home */
+
+}
+html body {
+  color: #666666;
+  font-size: 13px;
+  line-height: 1.231;
+  font-family: "minion-pro", Times, "Times New Roman", serif, Georgia, Times, serif;
+  overflow: hidden;
+}
+html body h3 {
+  border-bottom: 1px solid #888888;
+  clear: both;
+  font-family: "minion-pro", Times, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 10px;
+  font-weight: normal;
+  padding-bottom: 2px;
+}
+html body h3.figure1 {
+  margin-bottom: 17px;
+}
+html body h3.figure2 {
+  margin-top: 20px;
+}
+html body p {
+  font-family: "minion-pro", Times, "Times New Roman", serif;
+  font-size: 11px;
+  line-height: 1.4;
+  margin-top: 0;
+}
+html body header {
+  background: #000;
+  height: 35px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 300;
+}
+html body header nav {
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  text-align: center;
+  text-transform: uppercase;
+}
+html body header nav ul {
+  margin-top: 9px;
+}
+html body header nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+html body header nav ul li a {
+  color: #f1e4d3;
+  text-decoration: none;
+}
+html body header nav ul li a:hover {
+  border-bottom: 5px solid #f1e4d3;
+  color: #f1e4d3;
+  padding-bottom: 2px;
+}
+html body header nav ul li a:visited {
+  color: #f1e4d3;
+}
+html body header nav ul li.current_page_item a {
+  border-bottom: 5px solid #f1e4d3;
+  color: #f1e4d3;
+  padding-bottom: 2px;
+}
+html body #main {
+  margin: 40px auto 0 auto;
+  width: 960px;
+  /* end of slide */
+
+  /* end of slide1 */
+
+  /* end of slide2 */
+
+  /* end about */
+
+}
+html body #main .slide {
+  margin: 0 0 50px 0;
+  width: 100%;
+}
+html body #main .slide .block {
+  /*background:rgba(0, 0, 0, 0.2);*/
+
+  float: left;
+  min-height: 120px;
+}
+html body #main .slide .block .column {
+  margin-left: 0 0 0 20px;
+  width: 60px;
+}
+html body #main .slide .block .block {
+  float: left;
+}
+html body #main .slide .block blockquote {
+  margin: 0;
+}
+html body #main .slide .block2 {
+  width: 160px;
+}
+html body #main .slide .block3 {
+  width: 240px;
+}
+html body #main .slide .block4 {
+  width: 320px;
+}
+html body #main .slide .block5 {
+  width: 400px;
+}
+html body #main .slide .block6 {
+  width: 480px;
+}
+html body #main .slide .block7 {
+  width: 560px;
+}
+html body #main .slide .block8 {
+  width: 640px;
+}
+html body #main .slide .block9 {
+  width: 720px;
+}
+html body #main .slide .block10 {
+  width: 800px;
+}
+html body #main .slide .block11 {
+  width: 880px;
+}
+html body #main .slide .block12 {
+  width: 960px;
+}
+
+.block2 dl {width: 40px;float: left;}
+
+.block2 > .second { margin-left: 30px !important;}
+.block2 > .third { margin-left: 10px !important;}
+
+#banner {width: 2800px;margin-left: -930px; background-color: #0a0a0a; height: 300px; z-index: -1; position: absolute; top: 500px}
+
+html body #main .home {
+  position: relative;
+  /*padding:40px 0 0 0;*/
+
+  /*padding:225px 0 0 0;*/
+
+  padding: 130px 0 0 0;
+  margin: 0;
+  height: 690px;
+  /*                height: 882px;*/
+
+}
+html body #main .home #intro {
+  position: relative;
+  top: -50px;
+}
+html body #main .home #intro svg {
+  border-bottom: 1px dashed #888888;
+}
+html body #main .home .fader {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 240px;
+  z-index: 100;
+}
+html body #main .home .fader.left {
+  left: 0;
+  background: url(static/img/bg-fader-left.png) -1px 0 repeat-y;
+}
+html body #main .home .fader.right {
+  right: 0px;
+  background: url(static/img/bg-fader-right.png) 0 0 repeat-y;
+}
+html body #main .home .event_box {
+  /*                    top: -50px;*/
+
+  width: 100%;
+  margin-top: -50px;
+  margin-bottom: 10px;
+  opacity: 0;
+  /*                  background:#000;*/
+
+  display: inline-block;
+  position: relative;
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*                        color:@beige;*/
+
+  color: #000;
+  /*                    max-height:400px;*/
+
+  height: 350px;
+  /*overflow: hidden;*/
+  /*                    padding:20px 50px;*/
+
+  padding: 15px 0;
+  /*                  position:absolute;*/
+
+  /*top: 605px;*/
+  /* fixed pos instead of calculated */
+
+  text-transform: uppercase;
+  /*                        -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    border-radius: 20px;
+                    -webkit-box-shadow: 2px 7px 10px 1px rgba(0, 0, 0, 0.2);
+                    -moz-box-shadow: 2px 7px 10px 1px rgba(0, 0, 0, 0.2);
+                    box-shadow: 2px 7px 10px 1px rgba(0, 0, 0, 0.2);*/
+
+}
+html body #main .home .event_box #viewport {
+  overflow: hidden;
+  position: relative;
+  /*                      width: 640px;*/
+
+  width: 960px;
+  margin: 0 auto;
+}
+html body #main .home .event_box #viewport a {
+  color: #000;
+  border: none;
+}
+html body #main .home .event_box #viewport ul {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+html body #main .home .event_box #viewport ul li {
+  float: left;
+  height: auto;
+  list-style: none;
+  /*                              width: 640px;*/
+
+  width: 960px;
+  /* Cosmetic */
+
+  margin: 0 1px;
+  padding: 0;
+  text-align: center;
+}
+html body #main .home .event_box .simplePrevious, html body #main .home .event_box .simpleNext {
+  z-index: 200;
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  position: absolute;
+  top: 45%;
+  width: 20px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+html body #main .home .event_box .simplePrevious {
+  /*left:10px;*/
+  left: 100px;
+}
+html body #main .home .event_box .simpleNext {
+  /*right:10px;*/
+  right: 100px;
+}
+html body #main .home .event_box #simplePrevious, html body #main .home .event_box #simpleNext {
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  width: 20px;
+  text-indent: -999em;
+}
+html body #main .home .event_box #simplePrevious {
+  background: url("static/img/arrow-left.png");
+}
+html body #main .home .event_box #simpleNext {
+  background: url("static/img/arrow-right.png");
+}
+html body #main .home .event_box #simplePrevious:hover, html body #main .home .event_box #simpleNext:hover {
+  opacity: 0.6;
+}
+html body #main .home .event_box #simplePrevious:active, html body #main .home .event_box #simpleNext:active {
+  position: relative;
+  top: 1px;
+}
+html body #main .home .event_box .event_slide {
+  margin: 0 auto;
+  text-align: center;
+  /*                        width:640px;*/
+
+  width: 960px;
+}
+html body #main .home .event_box .event_slide .event_image {
+  display: inline-block;
+  /*                            float:left;*/
+
+  /*                            margin-right:20px;*/
+
+  padding-top: 30px;
+  width: 120px;
+}
+html body #main .home .event_box .event_slide .event_image.anderson {
+  margin: 0 50px;
+}
+html body #main .home .event_box .event_slide .header {
+  text-align: center;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+html body #main .home .event_box .event_slide .event_info {
+  margin: 0 auto;
+  width: 500px;
+}
+html body #main .home .event_box .event_slide .event_info p.event_number {
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+}
+html body #main .home .event_box .event_slide .event_info h2 {
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+html body #main .home .event_box .event_slide .event_info h2 sup {
+  font-size: 15px;
+}
+html body #main .home .event_box .event_slide .event_info h3 {
+  border: none;
+  font-size: 15px;
+  margin: 5px 0 7px 0;
+  text-transform: lowercase;
+}
+html body #main .home .event_box .event_slide .event_info div.book_now p {
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-size: 17px;
+}
+html body #main .home .event_box .event_slide .event_info div.book_now a {
+  /*border-bottom:1px solid #000;*/
+  color: #f1e4d3;
+  padding: 0 0 1px 0;
+  text-decoration: none;
+}
+html body #main .home .event_box .event_slide .event_info div.book_now #book_now_details {
+  display: block;
+  font-family: "minion-pro", Times, "Times New Roman", serif;
+  text-transform: none;
+}
+html body #main .slide1 {
+  border-top: 1px dashed #888888;
+  /*padding-top: 50px;*/
+
+  padding-top: 35px;
+}
+html body #main .slide1 .block4 {
+  width: 320px;
+}
+html body #main .slide1 .block4 span {
+  color: #666666;
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1;
+  position: relative;
+  top: -5px;
+  text-transform: uppercase;
+}
+html body #main .slide1 .block4 span span {
+  top: 0;
+}
+html body #main .slide1 .block4 span.career_facts, html body #main .slide1 .block4 span.career_facts span {
+  color: #d70a2d;
+  font-size: 69px;
+}
+html body #main .slide1 .block4 .block2 {
+  margin-left: 20px;
+  width: 160px;
+}
+html body #main .slide1 .block4 .block2:first-child {
+  margin-left: 0;
+  width: 140px;
+}
+html body #main .slide1 .block4 .block2 span.player_of_the_match {
+  color: #d70a2d;
+  font-size: 64px;
+  line-height: 0.9;
+}
+html body #main .slide1 .block4 .block2 span.wickets_strike_rate {
+  font-size: 45px;
+}
+html body #main .slide1 .block4 .block2 span.career_catches {
+  display: block;
+  font-size: 157px;
+  height: 100px;
+  top: -30px;
+}
+html body #main .slide1 .block4 .block2 span.overs_bowled {
+  font-size: 60px;
+  top: -9px;
+}
+html body #main .slide1 .block4 .block2 span.test_average {
+  font-size: 38px;
+  line-height: 0.2;
+  position: relative;
+  top: 0.9px;
+}
+html body #main .slide1 .block4 .block2 span.test_average span {
+  line-height: 0.8;
+}
+html body #main .slide1 .block4 .block2 span.dismissals span {
+  color: #d70a2d;
+  display: block;
+  float: left;
+  font-size: 140px;
+  line-height: 0.7;
+  margin-right: 5px;
+}
+html body #main .slide1 .block4 .block2 span.t20_wickets span {
+  color: #d70a2d;
+  font-size: 34px;
+}
+html body #main .slide1 .block4 .block2 dl {
+  float: left;
+  font-family: "minion-pro", Times, "Times New Roman", serif;
+  font-style: italic;
+  line-height: 0.2;
+  margin: 0 0 50px 0;
+  top: 10px;
+}
+html body #main .slide1 .block4 .block2 dl span {
+  float: left;
+  font-family: "minion-pro", Times, "Times New Roman", serif;
+  top: 3px;
+}
+html body #main .slide1 .block4 .block2 dl dt {
+  display: inline;
+  font-size: 10px;
+  position: relative;
+  top: -5px;
+}
+html body #main .slide1 .block4 .block2 dl dd {
+  font-size: 16px;
+}
+html body #main .slide1 .block4 .block2 dl.odi_career_wickets {
+  float: left;
+  line-height: 1;
+  margin-bottom: 0;
+}
+html body #main .slide1 .block4 .block2 dl.odi_career_wickets span {
+  top: -5px;
+}
+html body #main .slide1 .block4 .block2 dl.odi_career_wickets dt {
+  clear: both;
+  font-style: italic;
+  top: -10px;
+}
+html body #main .slide1 .block4 .block2 dl.odi_career_wickets dd {
+  font-size: 40px;
+  margin: 0 0 5px 0;
+}
+html body #main .slide1 .block4 .block2 dl.odi_career_wickets dd span {
+  float: none;
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+}
+html body #main .slide1 .block4 .block2 dl.odi_career_wickets dd.away span {
+  color: #d70a2d;
+}
+html body #main .slide1 .block4 .block2 dl.first {
+  margin-left: 0;
+}
+html body #main .slide1 .block4 .block2 span.career_catches {
+  float: right;
+}
+html body #main .slide1 .block7 {
+  float: right;
+}
+html body #main .slide2 {
+  margin-bottom: 25px;
+}
+html body #main .slide2 p.wickets_taken_zones, html body #main .slide2 p.simon_hughes_percentage {
+  font-style: italic;
+  font-size: 10px;
+  margin: 0;
+}
+html body #main .slide2 p.wickets_taken_zones span.wickets_taken_zones, html body #main .slide2 p.simon_hughes_percentage span.wickets_taken_zones {
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  line-height: 0.9;
+}
+html body #main .slide2 p.wickets_taken_zones span.simon_hughes_percentage, html body #main .slide2 p.simon_hughes_percentage span.simon_hughes_percentage {
+  color: #d70a2d;
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 70px;
+  font-style: normal;
+  line-height: 1;
+}
+html body #main .slide2 blockquote p {
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 27px;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}
+html body #main .slide2 .block {
+  min-height: 135px;
+}
+html body #main .slide2 .block2 {
+  margin-left: 80px;
+  width: 160px;
+}
+html body #main .slide2 .block2 .dismissal {
+  float: left;
+}
+html body #main .slide2 .block2 .dismissal dl {
+  margin: 0 0 10px 0;
+}
+html body #main .slide2 .block2 .dismissal dl dt {
+  color: #666666;
+  display: inline;
+  float: left;
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  min-width: 100px;
+  text-transform: uppercase;
+}
+html body #main .slide2 .block2 .dismissal dl dt.bowled {
+  color: #d70a2d;
+}
+html body #main .slide2 .block2 .dismissal dl dd {
+  color: #666666;
+  float: right;
+  font-family: "minion-pro", Times, "Times New Roman", serif;
+  font-size: 16.5px;
+  font-style: italic;
+  margin: 17px 0 0 0;
+}
+html body #main .slide2 .block4 {
+  margin-left: 80px;
+}
+html body #main .slide2 .block4:first-child {
+  margin-left: 0;
+}
+html body #main .slide2 .block4 figure {
+  margin-bottom: 10px;
+}
+html body #main .slide2 .block4 p.disclaimer {
+  font-size: 9px;
+  font-style: italic;
+}
+html body #main .slide2 .block4 .block2 {
+  margin-left: 20px;
+  width: 140px;
+}
+html body #main .slide2 .block4 .block2:first-child {
+  width: 160px;
+  margin-left: 0;
+}
+html body #main .slide3 {
+  /* end of block4 */
+
+  /* end of block7 */
+
+}
+html body #main .slide3 .block4 {
+  width: 320px;
+}
+html body #main .slide3 .block7 {
+  margin-left: 80px;
+  width: 560px;
+}
+html body #main .slide3 .block7 .block2 {
+  width: 160px;
+}
+html body #main .slide3 .block7 .block2 .dismissal {
+  float: left;
+}
+html body #main .slide3 .block7 .block2 .dismissal dl {
+  margin: 0 0 10px 0;
+}
+html body #main .slide3 .block7 .block2 .dismissal dl dt {
+  color: #666666;
+  display: inline;
+  float: left;
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  min-width: 100px;
+  text-transform: uppercase;
+}
+html body #main .slide3 .block7 .block2 .dismissal dl dt.bowled {
+  color: #d70a2d;
+}
+html body #main .slide3 .block7 .block2 .dismissal dl dd {
+  color: #666666;
+  float: right;
+  font-family: "minion-pro", Times, "Times New Roman", serif;
+  font-size: 16.5px;
+  font-style: italic;
+  margin: 17px 0 0 0;
+}
+html body #main .slide3 .block7 .block4 {
+  margin-left: 80px;
+  width: 320px;
+}
+html body #main .slide3 .block7 .block4 table thead tr th {
+  border-bottom: 1px solid #888888;
+  border-left: 1px solid #888888;
+  color: #d70a2d;
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  padding: 3px 0;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100px;
+}
+html body #main .slide3 .block7 .block4 table thead tr th:first-child {
+  border-left: none;
+}
+html body #main .slide3 .block7 .block4 table thead tr th.second {
+  padding-left: 10px;
+}
+html body #main .slide3 .block7 .block4 table thead tr th.third {
+  padding-left: 10px;
+}
+html body #main .slide3 .block7 .block4 table tbody tr td {
+  border-left: 1px solid #888888;
+  font-size: 11px;
+  padding: 3px 0 3px 10px;
+  width: 100px;
+}
+html body #main .slide3 .block7 .block4 table tbody tr td:first-child {
+  border: none;
+  padding-left: 0;
+}
+html body #main .slide3 .block7 .block4 table tbody tr td.second {
+  padding-left: 10px;
+}
+html body #main .slide3 .block7 .block4 table tbody tr td.third {
+  padding-left: 10px;
+}
+html body #main .slide4 {
+  /* end of block4 */
+
+  /* end of block4 */
+
+}
+html body #main .slide4 .block4 {
+  margin-left: 80px;
+  width: 320px;
+}
+html body #main .slide4 .block4 .shot_type {
+  margin-bottom: 20px;
+}
+html body #main .slide4 .block4:first-child {
+  margin-left: 0;
+}
+html body #main .slide4 .block4:first-child .block2 {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 160px;
+}
+html body #main .slide4 .block4:first-child .block2:first-child {
+  margin-left: 0;
+  width: 140px;
+}
+html body #main .slide4 .block4 .block4 {
+  margin: 0;
+}
+html body #main .slide4 .block4 .block2 {
+  margin-left: 20px;
+  width: 140px;
+}
+html body #main .slide4 .block4 .block2:first-child {
+  margin-left: 0;
+  width: 160px;
+}
+html body #main .slide4 .block4 .block2 p.batting_analysis {
+  font-style: italic;
+}
+html body #main .slide4 .block4 .block2 span {
+  color: #666666;
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1;
+  position: relative;
+  top: -5px;
+  text-transform: uppercase;
+}
+html body #main .slide4 .block4 .block2 span.balls_lasted span {
+  color: #d70a2d;
+  display: block;
+  float: left;
+  font-size: 115px;
+  line-height: 0.7;
+  margin-right: 5px;
+}
+html body #main .slide4 .block4 .block2 span.batting_analysis {
+  font-size: 30px;
+  font-style: italic;
+  line-height: 0.2;
+  position: relative;
+  top: 0.9px;
+}
+html body #main .slide4 .block4 .block2 span.batting_analysis span {
+  font-style: normal;
+  line-height: 0.8;
+}
+html body #main .slide4 .block4 .block2 span.strike_rate {
+  display: block;
+  float: left;
+  font-size: 90px;
+  line-height: 0.7;
+  margin-right: 9px;
+}
+html body #main .slide4 .block4 .block2 span.strike_rate_percentage {
+  color: #d70a2d;
+  display: block;
+  float: left;
+  font-size: 25px;
+  top: 0;
+}
+html body #main .slide4 .block4 .block2 span.strike_rate_percentage span {
+  color: #d70a2d;
+  top: 0;
+}
+html body #main .slide4 .block4 .block2 p.forward_defensive {
+  line-height: 1;
+}
+html body #main .slide4 .block4 .block2 p.forward_defensive span.forward_defensive {
+  font-size: 38px;
+  top: 0;
+}
+html body #main .slide4 .block2 {
+  margin-left: 80px;
+  width: 160px;
+}
+html body #main .slide4 .block2 p.night_watchmen_1, html body #main .slide4 .block2 p.night_watchmen_2 {
+  font-style: italic;
+}
+html body #main .slide4 .block2 p.night_watchmen_1 span, html body #main .slide4 .block2 p.night_watchmen_2 span {
+  color: #d70a2d;
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1;
+  position: relative;
+  top: -5px;
+  text-transform: uppercase;
+  top: 0;
+}
+html body #main .slide4 .block2 p.night_watchmen_1 span.night_watchmen_1,
+html body #main .slide4 .block2 p.night_watchmen_2 span.night_watchmen_1,
+html body #main .slide4 .block2 p.night_watchmen_1 span.night_watchmen_2,
+html body #main .slide4 .block2 p.night_watchmen_2 span.night_watchmen_2 {
+  color: #d70a2d;
+  display: block;
+  float: left;
+  font-size: 75px;
+  line-height: 0.7;
+  margin-right: 5px;
+}
+html body #main .slide4 .block2 p.night_watchmen_1 span.night_watchmen_1 span,
+html body #main .slide4 .block2 p.night_watchmen_2 span.night_watchmen_1 span,
+html body #main .slide4 .block2 p.night_watchmen_1 span.night_watchmen_2 span,
+html body #main .slide4 .block2 p.night_watchmen_2 span.night_watchmen_2 span {
+  font-style: normal;
+}
+html body #main .about {
+  margin-top: 75px;
+}
+html body #main .about .block5 {
+  margin-left: 80px;
+  width: 440px;
+}
+html body #main .about .block5:first-child {
+  margin-left: 0;
+}
+html body #main .about .block5 iframe {
+  margin-bottom: 30px;
+}
+html body #main .about .block5 blockquote, #presspost blockquote {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+html body #main .about .block5 blockquote.large p {
+  color: #000;
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+html body #main .about .block5 blockquote p, #presspost blockquote p  {
+  color: #000;
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 1.2;
+}
+html body #main .about .block5 p {
+  color: #666666;
+  font-size: 14px;
+  width: 100%;
+}
+html body #main .about .block5 p.profile {
+  text-align: right;
+}
+html body #main .about .block5 p a {
+  color: #666666;
+  font-style: italic;
+  text-decoration: underline;
+}
+html body #main .events {
+  margin-top: 75px;
+}
+html body #main .events h1, html body #main .events h2, html body #main .events h3 {
+  color: #000;
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+html body #main .events .block {
+  margin-left: 0;
+}
+html body #main .events .block:first-child {
+  margin-left: 0;
+}
+html body #main .events .block7 {
+  margin-top: 20px;
+  margin-left: 0;
+  padding-top: 19px;
+}
+html body #main .events .block7 .event_image {
+  color: #f1e4d3;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 120px;
+  margin: 0 10px 20px 0;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  width: 120px;
+}
+
+html body #main .events #eventImage1,html body #main .events #eventImage2 {
+	display: none;
+}
+
+
+html body #main .events .block7 .event_image .event_image_number {
+  color: #f1e4d3;
+  font-size: 20px;
+  padding-top: 36px;
+  position: relative;
+  z-index: 20;
+}
+html body #main .events .block7 .event_image.red .event_image_color_bg, html body #main .events .block7 .event_image.grey .event_image_color_bg {
+  display: block;
+  height: 120px;
+  width: 120px;
+}
+html body #main .events .block7 .event_image.red .event_image_color_bg {
+  background: url("static/img/event_red_circle2.png") no-repeat;
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+html body #main .events .block7 .event_image.red .event_image_bg {
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+html body #main .events .block7 .event_image.red .event_image_bg.imgHover {
+  z-index: 10;
+}
+html body #main .events .block7 .event_image.red:hover .event_image_color_bg {
+  z-index: 1;
+}
+html body #main .events .block7 .event_image.red:hover .event_image_bg {
+  z-index: 10;
+}
+html body #main .events .block7 .event_image.grey .event_image_color_bg {
+  background: url("static/img/event_grey_circle2.png") no-repeat;
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+html body #main .events .block7 .event_image.grey .event_image_bg {
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+html body #main .events .block7 .event_image.grey .event_image_bg.imgHover {
+  z-index: 10;
+}
+html body #main .events .block7 .event_image.grey:hover .event_image_color_bg {
+  z-index: 1;
+}
+html body #main .events .block7 .event_image.grey:hover .event_image_bg {
+  z-index: 10;
+}
+html body #main .events .block7 h1, html body #main .events .block7 p {
+  width: 240px;
+}
+html body #main .events .block7 p {
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+html body #main .events .block7 p a {
+  color: #d70a2d;
+  text-decoration: none;
+}
+html body #main .events .block5 .event_box {
+  margin: 0 auto;
+  display: none;
+}
+html body #main .events .block5 .event_box:first-child {
+  display: block;
+}
+html body #main .events .block5 .event_box .event_info {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+html body #main .events .block5 .event_box .event_info h2 {
+  font-size: 27px;
+  margin: 10px 0;
+}
+html body #main .events .block5 .event_box .event_info h2 sup {
+  font-size: 15px;
+}
+html body #main .events .block5 .event_box .event_info h2.description {
+  margin-top: 20px;
+}
+html body #main .events .block5 .event_box .event_info h3 {
+  border: none;
+  font-size: 15px;
+  margin: 5px 0 7px 0;
+}
+html body #main .events .block5 .event_box .event_info h3 a {
+  color: #000;
+}
+html body #main .events .block5 .event_box .event_info p {
+  color: #000;
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+html body #main .events .block5 .event_box .event_info p a {
+  /*border-bottom:1px solid #000;*/
+  color: #000;
+  padding: 0 0 1px 0;
+  text-decoration: none;
+}
+html body #main .events .block5 .event_box .event_info p.event_number {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+}
+html body #main .events .block5 .event_box .event_info p #book_now_details {
+  display: block;
+  font-family: "minion-pro", Times, "Times New Roman", serif;
+  text-transform: none;
+}
+html body #main .events .block5 .event_box .event_info div.book_now p {
+  color: #666666;
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-size: 17px;
+}
+html body #main .events .block5 .event_box .event_info div.book_now a {
+  color: #666666;
+  padding: 0 0 1px 0;
+  text-decoration: none;
+}
+html body #main .events .block5 .event_box .event_info div.book_now #book_now_details {
+  color: #666666;
+  display: block;
+  font-family: "minion-pro", Times, "Times New Roman", serif;
+  font-size: 14px;
+  text-transform: none;
+}
+html body #main .events .block5 .event_box .event_info div.content p {
+  color: #666666;
+  font-family: "minion-pro", Times, "Times New Roman", serif;
+  font-style: normal;
+  font-size: 14px;
+  text-transform: none;
+}
+html body #main .sponsors, html body #main .charities, html body #main .contact {
+  margin-top: 75px;
+}
+html body #main .sponsors .block, html body #main .charities .block, html body #main .contact .block {
+  margin-bottom: 30px;
+  margin-left: 80px;
+}
+html body #main .sponsors .block2, html body #main .charities .block2, html body #main .contact .block2 {
+  margin-left: 200px;
+  text-align: center;
+}
+html body #main .sponsors .block4 h1,
+html body #main .charities .block4 h1,
+html body #main .contact .block4 h1,
+html body #main .sponsors .block4 h2,
+html body #main .charities .block4 h2,
+html body #main .contact .block4 h2 {
+  color: #000;
+  font-family: "myriad-pro-condensed", "Myriad Pro Condensed", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  margin-bottom: 15px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+html body #main .sponsors .block4 p, html body #main .charities .block4 p, html body #main .contact .block4 p {
+  color: #666666;
+  font-size: 15px;
+}
+html body #main .sponsors .block4 p a, html body #main .charities .block4 p a, html body #main .contact .block4 p a {
+  color: #666666;
+}
+html body footer {
+  background: none;
+  bottom: 0;
+  color: #f1e4d3;
+  height: 35px;
+  font-size: 13px;
+  left: 0;
+  width: 100%;
+  z-index: 300;
+}
+html body footer a {
+  color: #f1e4d3;
+  text-decoration: none;
+}
+html body footer a:hover {
+  opacity: 0.8;
+}
+html body footer a:visited {
+  color: #f1e4d3;
+}
+html body footer .footer_black {
+  background: #000;
+  bottom: 0;
+  height: 35px;
+  position: fixed;
+  width: 100%;
+  z-index: 300;
+}
+html body footer .footer_black .inner {
+  margin: 8px auto 0 auto;
+  width: 960px;
+}
+html body footer .footer_black .inner .left {
+  margin-top: 2px;
+  float: left;
+}
+html body footer .footer_black .inner .right {
+  float: right;
+}
+html body.home footer {
+  background: url("static/img/bg-white.png");
+  margin: 50px 0 0 0;
+}
+html body.home footer .footer {
+  margin: 0 auto;
+  padding: 20px 0 60px 0;
+  width: 960px;
+}
+html body.home footer .footer .block {
+  float: left;
+}
+html body.home footer .footer .block h3 {
+  color: #666666;
+}
+html body.home footer .footer .block4 {
+  margin-right: 80px;
+  width: 320px;
+}
+html body.home footer .footer .block4 .block2 {
+  margin-top: 20px;
+  text-align: center;
+  width: 160px;
+}
+html body.home footer .footer .block7 {
+  width: 560px;
+}
+html body.home footer .footer .block7 .block23 {
+  margin-top: 20px;
+  text-align: center;
+  width: 186.4px;
+}
+html body.home footer .footer .block7 .block23.two {
+  margin-top: 30px;
+}
+html body.home footer .footer .block7 .block23.three {
+  margin-top: 41px;
+}
+#tweetthis, #likethis {
+  float: left;
+  margin: 1px 0 0 0;
+}
+iframe.twitter-share-button {
+  width: 98px !important;
+}
+#tweetthis {
+  /*    width: 80px;
+    padding: 0 0 0 5px;
+    float: left;
+    position: relative;
+    right: -4px;*/
+
+}
+#likethis {
+  /*    width: 80px;
+    padding: 0 0 0 5px;
+    float: left;*/
+
+}
+@-moz-document url-prefix() {
+  html body #main .slide1 .block4 span.career_facts, html body #main .slide1 .block4 span.career_facts span {
+    font-size: 65px;
+  }
+  html body #main .slide1 .block4 .block2 dl.odi_career_wickets {
+    margin-left: 10px;
+  }
+  html body #main .slide1 .block4 .block2 dl.odi_career_wickets dd {
+    font-size: 48px;
+  }
+}
+@-webkit-keyframes pulse {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.4;
+  }
+}
+#downArrow a {
+  -webkit-animation: pulse 1s 1s ease-in-out infinite alternate;
+  -moz-animation: pulse 1s 1s ease-in-out infinite alternate;
+}
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+@media only screen and (max-width: 767px) {
+  /*    #awwwards { top: 220px; }*/
+}
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  
+}
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  
+}
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /*    #awwwards { top: 220px; }*/
+  html body #main .slide1 .block4 span.career_facts, html body #main .slide1 .block4 span.career_facts span {
+    font-size: 65px;
+  }
+  html body #main .slide1 .block4 .block2 dl.odi_career_wickets {
+    margin-left: 10px;
+  }
+  html body #main .slide1 .block4 .block2 dl.odi_career_wickets dd {
+    font-size: 48px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .section_header {
+    /*        left: -66px;*/
+  
+  }
+  .heading.number {
+    /*        display: inline;*/
+  
+    opacity: 1;
+  }
+  #awwwards {
+    position: fixed;
+    top: 80px;
+  }
+}
+/* */
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+}
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+}
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+/* For image replacement */
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  *line-height: 0;
+}
+.ir br {
+  display: none;
+}
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+  visibility: hidden;
+}
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+  /* Black prints faster: h5bp.com/s */
+  a, a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  /* h5bp.com/t */
+  tr, img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page  {
+    margin: 0.5cm;
+  }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
+
+/*----------------- 
+   vSlider Styles
+-----------------*/
+#jamesandersonhomecontainer .cs-buttons {margin: 0 0 0 -90px !important; padding: 0px !important; position: absolute; top: 25px;}
+#jamesandersonhomecontainer .cs-buttons a {background-size: 100% !important; width: 9px !important; height: 9px !important;}
+
+/*--------------------==
+    Page head styles
+----------------------*/
+
+#page-head {border-bottom: 1px dashed #888888; margin-top: 70px; margin-bottom: 40px}
+
+#page-head h1, #page-foot h1 {
+  margin: 0;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #dd0d20;
+  font-family: myriad-pro-condensed, 'Myriad Pro Condensed', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+
+#page-foot {border-top: 1px dashed #888888; margin-top: 25px; margin-bottom: 40px; padding-top: 20px}
+#page-foot h1 {margin-bottom: 10px; color: #000000}
+#page-foot p {line-height: 100%; font-size: 90%}
+#page-foot span { letter-spacing: 1px; font-size: 200%; color: #dd0d20;font-family: myriad-pro-condensed, 'Myriad Pro Condensed', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+/*----------------- 
+   Gallery Page Styles
+-----------------*/
+
+#gallery-nav {width: 301px; float: left;}
+.gallery-nav-item {width: 301px; height: 80px; background-color: #cc0000; position: relative; margin-bottom: 15px}
+.gallery-nav-item h1 { text-transform: uppercase; font-size: 30px; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); margin: 0px; display: block; position: absolute; bottom: 0; right: 10px; color: #ffffff;font-weight: 400;
+                        letter-spacing: 1px; font-family: "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+
+#gallery-main {float: left; width: 642px; margin-left: 17px; }
+
+.gallery-content {border: 0px solid}
+
+/* wp standard  gallery style */
+
+dl {width: 171px;}
+dt {width: 130px;}
+.gallery-item {width: 171px !important; margin: 0 0 43px 43px !important;}
+#gallery-1 img {border: 0px !important;}
+
+/* lightbox transparency */
+
+a.cboxElement {display: block; border: 0px;}
+
+#cboxOverlay {opacity: 0.4 !important;}
+
+.under {background-color: #ffffff;position:absolute !important; float: none;}
+
+/*----------------- 
+   Video Page Styles
+-----------------*/
+
+#video-nav {width: 316px; float: left;}
+
+.video-nav-item {width: 143px; height: 80px; position: relative; margin: 0 15px 15px 0; float:left; background-color: #f1f1f1 !important;}
+
+#video-main {float: left; width: 600px; margin-left: 44px; }
+
+.gallery-content iframe { width: 600px; height:340px;}
+.gallery-content p { padding: 0px; margin: 0px;}
+
+/*----------------- 
+   New sponsor Styles
+-----------------*/
+
+.sponsor {width: 300px; background-color: #0c0c0c; padding: 5px; margin: 0 15px 15px 0; float: left; border-radius: 15px;}
+.last {margin-right: 0px !important;}
+
+
+/*-------------------------
+   Management page styles
+-------------------------*/
+
+#manage-left { float: left; width: 470px; padding: 5px; text-align: right;}
+
+#manage-right { float: left; width: 470px; padding: 5px; text-align: left;}
+#manage-right h1 { margin: 0;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: myriad-pro-condensed, 'Myriad Pro Condensed', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+#manage-right p { font-size: 12px;}
+
+#manage-right h1 {margin-bottom: 10px; color: #000000}
+#manage-right span { letter-spacing: 1px; font-size: 200%; color: #dd0d20;font-family: myriad-pro-condensed, 'Myriad Pro Condensed', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+
+/*-------------------------
+   Press page styles
+-------------------------*/
+
+#press-container {width: 960px; margin-top: 55px; height: 500px;}
+#press-inner {width: 975px;}
+
+.press-item-cont { margin-right: 15px; float: left; width: 147px; height: 320px; position: relative;}
+
+.press-item-cont .press-bottom { bottom: 10px; position: absolute; opacity: 0.5;} /*Fail over*/
+
+.item-1 * .press-circle { width: 30px; height: 30px; margin-bottom: -10px}
+.press-item-cont .item-1 { bottom: 70px; position: absolute;}
+.press-item-cont .item-2 { bottom: 14px; position: absolute;}
+.press-item-cont .item-3 { bottom: 0px; position: absolute;}
+.press-item-cont .item-4 { bottom: 79px; position: absolute;}
+.press-item-cont .item-5 { bottom: 25px; position: absolute;}
+.press-item-cont .item-6 { bottom: 19px; position: absolute;}
+
+/*.press-item-cont > .hide {opacity: 0}*/
+
+
+.press-item {width: 137px; max-height: 246px; overflow: hidden; padding: 5px; background-color: #000000; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; color: #ffffff; text-align: center;}
+
+.press-item h3 {
+  margin: 0;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-bottom: 0px;
+  margin-bottom: 10px;
+  font-family: myriad-pro-condensed, 'Myriad Pro Condensed', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.press-item h4 {
+  margin: 0 0 8px 0;
+}
+.press-author {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #dddddd;
+  margin-top: 10px;
+  font-family: myriad-pro-condensed, 'Myriad Pro Condensed', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.press-for a {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: normal;
+  color: #dddddd;
+}
+
+.press-triangle {
+  margin: 0 auto;
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 30px solid #000;
+  margin-bottom: 10px
+}
+.press-circle {border-radius: 50%; width: 10px; height: 10px; background-color: #dd0d20; margin: 0 auto; }
+
+#press-underline { width: 850px; height: 2px; margin: 193px 34px 0 32px; position: absolute;}
+
+/*-------------------------
+   Press individual post
+-------------------------*/
+#press-twitter {width: 301px; float: left; margin-top: 20px;}
+#presspost { padding-bottom:40px;}
+#presspost p {font-size: 16px !important;}
+#presspost p a { color:#d70a2d; text-decoration:underline !important; font-weight:bold;}
+#presspost p a:hover { color:#000;}
+
+#post-head {border-bottom: 1px dashed #888888; margin-top: 20px; margin-bottom: 40px}
+
+#post-head h1, #post-foot h1 {
+  margin: 0;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #dd0d20;
+  font-family: myriad-pro-condensed, 'Myriad Pro Condensed', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+
+/*-------------------------
+   New Charities
+   -------------------------*/
+
+#charities * p {font-size: 14px;}
+
+#charity-gal * dl.gallery-item {margin:0 92px 40px 0 !important}
+
+#charity-large {width: 600px;}
+#charity-mask {width: 490px; overflow: hidden;}
+
+
+/*-------------------------
+   Misc
+   -------------------------*/
+
+.button, a.button { display:inline-block; -webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px; padding:5px 10px; background:#d70a2d; color:#FFF !important; text-decoration:none !important; font-family: myriad-pro-condensed, 'Myriad Pro Condensed', 'Myriad Pro', Myriad,'Helvetica Neue', Helvetica, Arial, sans-serif;}
+.button:hover, a.button:hover { background:#000;}

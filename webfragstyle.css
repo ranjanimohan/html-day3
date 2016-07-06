@@ -1,0 +1,39 @@
+body{
+  width: 600px;
+  margin: auto;
+}
+.image{
+  float: left;
+  width: 100px;
+}
+.content{
+  float: right;
+  width: 500px;
+}
+.content ul{
+  list-style: none;
+  padding: 0;
+}
+.content li{
+  display: inline;
+}
+.content li ::after{
+  content: '\\';
+  padding-left: 5px;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: black;
+}
+.continue {
+  text-decoration: underline;
+  float: right;
+}
+.continue:after{
+  content: ')';
+}
+.continue:before{
+  content: '(';
+}
